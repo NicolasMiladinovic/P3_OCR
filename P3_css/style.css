@@ -142,6 +142,7 @@ text-align: center;
     position: relative;
 }
 .LCALF h3 {
+    font-family: "Croissant One", Impact;
     margin-top: 20vmin;
     font-size: 1.6em;
     padding: 0vmin 3vmin 0vmin 3vmin;
@@ -490,7 +491,7 @@ footer
     }
 }
 .LCALF_title {
-  font-family: "Croissant One";
+  font-family: "Croissant One", impact;
   font-size: 1.6em;
   text-align: center;
 }
@@ -794,4 +795,8 @@ footer
     display: flex;
     flex-wrap: wrap;
   }
+}
+@font-face {
+  font-family: "Roboto Condensed Light";
+  src: url("../fonts/croissantone-regular.ttf");
 }
