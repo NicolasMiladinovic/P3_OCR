@@ -314,3 +314,282 @@ footer
 .foot_text {
     padding: 0vmin 3vmin 0vmin 3vmin;
 }
+.lien_restaurant {
+    display: block;
+    text-align: center;
+    font-family: roboto;
+    font-size: 1em;
+    color: #414141;
+}
+@media screen and (min-width: 480px) {
+    .lien_restaurant {
+      font-size: 1.2em;
+    }
+}
+@media screen and (min-width: 768px) {
+    .lien_restaurant {
+      font-size: 1.4em;
+    }
+}
+.menu_LNE {
+    box-shadow: 0px 0px 8px 1px #a2a5a4;
+    border-radius: 5px;
+    width: 80%;
+    padding: 1em 0em 1em 0em;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: #3d1319;
+    background: #f8e5e1;
+}
+@media screen and (min-width: 1200px) {
+    .menu_LNE {
+      width: 70%;
+    }
+}
+.LNE_title {
+    font-size: 2.5em;
+    font-weight: 300;
+    text-align: center;
+}
+@media screen and (min-width: 480px) {
+    .LNE_title {
+      font-size: 3.5em;
+    }
+}
+@media screen and (min-width: 768px) {
+    .LNE_title {
+      font-size: 3.8em;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .LNE_title {
+      font-size: 4.5em;
+    }
+}
+.LNE_undertitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+}
+.LNE_undertitle img {
+    width: 25%;
+}
+.note_imgtop {
+    width: 15%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vmin;
+}
+.LNE_bottom {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 300;
+}
+@media screen and (min-width: 768px) {
+    .LNE_bottom {
+      font-size: 2.2em;
+    }
+    .LNE_bottom img {
+      width: 1.2em;
+      height: auto;
+    }
+}
+.menu_LNE ul {
+    list-style: none;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 0px;
+    font-style: italic;
+    font-size: 1em;
+}
+@media screen and (min-width: 480px) {
+    .menu_LNE ul {
+      font-size: 1.2em;
+    }
+}
+@media screen and (min-width: 768px) {
+    .menu_LNE ul {
+      font-size: 1.3em;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .menu_LNE ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .plat {
+      display: inline-block;
+      width: 93%;
+      text-align: left;
+      padding: 0.3em 0em 0.3em 0em;
+    }
+}
+.price {
+    font-size: 1em;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+}
+@media screen and (min-width: 1200px) {
+    .price {
+      display: inline-block;
+      margin: 0;
+      text-align: right;
+      width: 7%;
+      padding: 0.3em 0em 0.3em 0em;
+    }
+}
+
+.menu_LCALF {
+    box-shadow: 0px 0px 8px 1px #a2a5a4;
+    border-radius: 5px;
+    width: 80%;
+    padding: 1em 0em 1em 0em;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff5fe;
+}
+@media screen and (min-width: 1200px) {
+    .menu_LCALF {
+      width: 70%;
+    }
+}
+.menu_LCALF h3 {
+    color: #c77529;
+    font-size: 1.2em;
+    padding: 0vmin 3vmin 0vmin 3vmin;
+}
+@media screen and (min-width: 480px) {
+    .menu_LCALF h3 {
+      font-size: 2em;
+    }
+}
+
+.menu_LCALF h2 {
+    color: #c77529;
+    font-size: 2em;
+    font-weight: bold;
+}
+@media screen and (min-width: 480px) {
+    .menu_LCALF h2 {
+      font-size: 2.8em;
+    }
+}
+.LCALF_title {
+  font-family: "Croissant One";
+  font-size: 1.6em;
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .LCALF_title {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LCALF_title {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .LCALF_title {
+    font-size: 2.8em;
+  }
+}
+.menu_LCALF img {
+    width: 25%;
+}
+.LCALF_undertitlestart {
+    color: #c77529;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+@media screen and (min-width: 768px) {
+    .LCALF_undertitlestart img {
+      width: 30%;
+    }
+}
+.LCALF_undertitlemain {
+    color: #a56799;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+@media screen and (min-width: 768px) {
+    .LCALF_undertitlemain img {
+      width: 30%;
+    }
+}
+.LCALF_undertitledessert {
+    color: #6e4ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+@media screen and (min-width: 768px) {
+    .LCALF_undertitledessert img {
+      width: 30%;
+    }
+}
+.LCALF_starter {
+    list-style: none;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 0px;
+    font-style: italic;
+    color: #c77529;
+}
+.LCALF_maincourse {
+    list-style: none;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 0px;
+    font-style: italic;
+    color: #a56799;
+}
+@media screen and (min-width: 480px) {
+    .LCALF_maincourse {
+      font-size: 1.2em;
+    }
+}
+@media screen and (min-width: 768px) {
+    .LCALF_maincourse {
+      font-size: 1.3em;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .LCALF_maincourse {
+      font-size: 1.5em;
+      display: flex;
+      flex-wrap: wrap;
+    }
+}
