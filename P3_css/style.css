@@ -470,7 +470,6 @@ footer
     }
 }
 .menu_LCALF h3 {
-    color: #c77529;
     font-size: 1.2em;
     padding: 0vmin 3vmin 0vmin 3vmin;
 }
@@ -567,6 +566,23 @@ footer
     font-style: italic;
     color: #c77529;
 }
+@media screen and (min-width: 480px) {
+  .LCALF_starter {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LCALF_starter {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .LCALF_starter {
+    font-size: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .LCALF_maincourse {
     list-style: none;
     text-align: center;
@@ -592,4 +608,190 @@ footer
       display: flex;
       flex-wrap: wrap;
     }
+}
+.LCALF_dessert {
+  list-style: none;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-left: 0px;
+  font-style: italic;
+  color: #6e4ccc;
+}
+@media screen and (min-width: 480px) {
+  .LCALF_dessert {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LCALF_dessert {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .LCALF_dessert {
+    font-size: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.menu_LDDP {
+  box-shadow: 0px 0px 8px 1px #a2a5a4;
+  border-radius: 5px;
+  width: 80%;
+  padding: 1em 0em 1em 0em;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: #edefef;
+  font-family: tillana, cursive;
+  font-size: 1em;
+}
+@media screen and (min-width: 1200px) {
+  .menu_LDDP {
+    width: 70%;
+  }
+}
+.LDDP_title {
+  color: #3a4fa2;
+  font-size: 2em;
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .LDDP_title {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LDDP_title {
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .LDDP_title {
+    font-size: 3.5em;
+  }
+}
+.LDDP_undertitle {
+  font-family: tillana, cursive;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 1em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+@media screen and (min-width: 768px) {
+  .LDDP_undertitle img {
+    width: 30%;
+  }
+}
+.menu_LDDP img {
+  width: 25%;
+}
+.menu_LDDP ul {
+  list-style: none;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-left: 0px;
+  font-style: italic;
+}
+@media screen and (min-width: 480px) {
+  .menu_LDDP ul {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu_LDDP ul {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu_LDDP ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.menu_LPDG {
+  box-shadow: 0px 0px 8px 1px #a2a5a4;
+  border-radius: 5px;
+  width: 80%;
+  padding: 1em 0em 1em 0em;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fdfffd;
+  font-family: tillana, cursive;
+  font-size: 1em;
+}
+@media screen and (min-width: 1200px) {
+  .menu_LPDG {
+    width: 70%;
+  }
+}
+.LPDG_title {
+  color: #57a746;
+  font-size: 2em;
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .LPDG_title {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LPDG_title {
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .LPDG_title {
+    font-size: 3.5em;
+  }
+}
+.LPDG_undertitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-family: tillana, cursive;
+  font-size: 1em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+.LPDG_undertitle img {
+  width: 25%;
+}
+@media screen and (min-width: 768px) {
+  .LPDG_undertitle img {
+    width: 30%;
+  }
+}
+.menu_LPDG ul {
+  list-style: none;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-left: 0px;
+  font-style: italic;
+}
+@media screen and (min-width: 480px) {
+  .menu_LPDG ul {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu_LPDG ul {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu_LPDG ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
