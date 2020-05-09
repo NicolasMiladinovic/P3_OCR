@@ -1,4 +1,15 @@
-body {
+@font-face {
+  font-family: "Croissant One";
+  src: url("../fonts/croissantone-regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+body 
+{
     margin: 0px;
 }
 .page
@@ -282,13 +293,14 @@ text-align: center;
 }
 footer
 {
+    font-family: "Roboto";
     background-color: #579C87;
     display: flex;
     color: #fdcb46ff;
     font-family: Roboto;
     font-size: 1em;
     align-items: center;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: 100%;
     justify-content: space-between;
@@ -314,6 +326,11 @@ footer
 }
 .foot_text {
     padding: 0vmin 3vmin 0vmin 3vmin;
+}
+a {
+  text-decoration: none;
+  color: #fdcb46ff;
+
 }
 .lien_restaurant {
     display: block;
@@ -796,7 +813,11 @@ footer
     flex-wrap: wrap;
   }
 }
-@font-face {
-  font-family: "Roboto Condensed Light";
-  src: url("../fonts/croissantone-regular.ttf");
+/*        ANIMATIONS         */ 
+.LCALF_underlinestart:hover {
+  background-size: 100% 100%;
+}
+.LCALF_underlinestart {
+  background: linear-gradient(to top, #c77529 5%, transparent 5.01%) no-repeat left bottom/0 100%;
+  transition: background-size 1000ms;
 }
