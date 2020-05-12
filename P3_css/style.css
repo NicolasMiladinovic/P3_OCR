@@ -8,6 +8,42 @@
   src: url("../fonts/Roboto-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Devonshire";
+  src: url("../fonts/Devonshire-Regular.ttf");
+}
+
+@font-face {
+  font-family: "KaushanScript";
+  src: url("../fonts/KaushanScript-Regular.otf");
+}
+
+@font-face {
+  font-family: "Parisienne";
+  src: url("../fonts/parisienne-regular.ttf");
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translate(2px, 0);
+  }
+  50% {
+    transform: translate(-2px, 0);
+  }
+  100% {
+    transform: translate(2px, 0);
+  }
+}
+
+@keyframes jumpdot {
+  0% {
+    transform: translateY(0.3em);
+  }
+  100% {
+    transform: translateY(-0.3em);
+  }
+}
+
 body 
 {
     margin: 0px;
@@ -88,6 +124,7 @@ text-align: center;
     align-items: center;
 }
 .LNE h3 {
+    font-family: "Devonshire";
     font-weight: 300;
     color: #3d1319;
     font-size: 2em;
@@ -142,6 +179,13 @@ text-align: center;
     display: block;
     width: 100%;
     height: 100%;
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    opacity: 1;
+}
+.LNE a:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
 }
 .LCALF
 {
@@ -149,7 +193,6 @@ text-align: center;
     border-radius: 5px;
     margin: auto;
     height: 100%;
-
     position: relative;
 }
 .LCALF h3 {
@@ -157,6 +200,10 @@ text-align: center;
     margin-top: 20vmin;
     font-size: 1.6em;
     padding: 0vmin 3vmin 0vmin 3vmin;
+    background: linear-gradient(to right, #c77529 0%, #6e4ccc 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 @media screen and (min-width: 480px) {
     .LCALF h3 {
@@ -172,6 +219,9 @@ text-align: center;
       font-size: 2.8em;
     }
 }
+.LCALF_colortitlemenu {
+  color: #c77412;
+}
 .LCALF a {
     text-decoration: none;
     display: block;
@@ -180,6 +230,13 @@ text-align: center;
     position: absolute;
     top: 0;
     left: 0;
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    opacity: 1;
+}
+.LCALF a:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
 }
 .LDDP
 {
@@ -190,6 +247,7 @@ text-align: center;
     position: relative;
 }
 .LDDP h3 {
+    font-family: "Parisienne";
     margin-top: 40vmin;
     font-size: 2em;
     padding: 0vmin 3vmin 0vmin 3vmin;
@@ -221,6 +279,13 @@ text-align: center;
     position: absolute;
     top: 0;
     left: 0;
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    opacity: 1;
+}
+.LDDP a:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
 }
 .LPDG
 {
@@ -231,6 +296,7 @@ text-align: center;
     position: relative;
 }
 .LPDG h3 {
+    font-family: "KaushanScript";
     margin-top: 40vmin;
     font-size: 2em;
     padding: 0vmin 3vmin 0vmin 3vmin;
@@ -261,6 +327,13 @@ text-align: center;
     position: absolute;
     top: 0;
     left: 0;
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    opacity: 1;
+}
+.LPDG a:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
 }
 .prochainement
 {
@@ -323,6 +396,10 @@ footer
       height: 6vmin;
       font-size: 1.5em;
     }
+}
+footer a:hover {
+  animation: wiggle 75ms infinite;
+  animation-timing-function: linear;
 }
 .foot_text {
     padding: 0vmin 3vmin 0vmin 3vmin;
@@ -511,6 +588,10 @@ a {
   font-family: "Croissant One", impact;
   font-size: 1.6em;
   text-align: center;
+  background: linear-gradient(to right, #e38913 0%, #8f5bfe 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media screen and (min-width: 480px) {
   .LCALF_title {
@@ -813,11 +894,28 @@ a {
     flex-wrap: wrap;
   }
 }
-/*        ANIMATIONS         */ 
+
 .LCALF_underlinestart:hover {
   background-size: 100% 100%;
 }
 .LCALF_underlinestart {
   background: linear-gradient(to top, #c77529 5%, transparent 5.01%) no-repeat left bottom/0 100%;
   transition: background-size 1000ms;
+}
+
+.prochainement_dot {
+  width: 0.4em;
+  height: auto;
+  margin-left: 1em;
+  animation-name: jumpdot;
+  animation-duration: 900ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition-timing-function: ease-in-out;
+}
+.prochainement_dot2 {
+  animation-delay: 300ms;
+}
+.prochainement_dot3 {
+  animation-delay: 600ms;
 }
