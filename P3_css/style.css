@@ -23,6 +23,11 @@
   src: url("../fonts/parisienne-regular.ttf");
 }
 
+@font-face {
+  font-family: "tillana";
+  src: url("../fonts/tillana-regular.ttf");
+}
+
 @keyframes wiggle {
   0% {
     transform: translate(2px, 0);
@@ -141,6 +146,7 @@ text-align: center;
 }
 
 .LNE h2 {
+    font-family: "tillana";
     font-weight: 300;
     color: #3d1319;
     font-size: 2em;
@@ -251,6 +257,11 @@ text-align: center;
     margin-top: 40vmin;
     font-size: 2em;
     padding: 0vmin 3vmin 0vmin 3vmin;
+    background: linear-gradient(to right, #0825db 0%, #3da1fb 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 }
 @media screen and (min-width: 480px) {
     .LDDP h3 {
@@ -263,6 +274,8 @@ text-align: center;
     }
 }
 .LDDP h2 {
+  font-family: "tillana", cursive;
+    color: #3da1fb;
     font-size: 2em;
     font-weight: bold;
 }
@@ -296,6 +309,10 @@ text-align: center;
     position: relative;
 }
 .LPDG h3 {
+    background: linear-gradient(to right, #3d923a 0%, #beff7f 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: "KaushanScript";
     margin-top: 40vmin;
     font-size: 2em;
@@ -313,6 +330,11 @@ text-align: center;
 }
 .LPDG h2 {
     font-size: 2em;
+    font-family: "tillana";
+    background: linear-gradient(to right, #3d923a 0%, #beff7f 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 @media screen and (min-width: 480px) {
     .LPDG h2 {
@@ -427,6 +449,7 @@ a {
     }
 }
 .menu_LNE {
+    font-family: "tillana", cursive;
     box-shadow: 0px 0px 8px 1px #a2a5a4;
     border-radius: 5px;
     width: 80%;
@@ -504,7 +527,6 @@ a {
     margin-right: 10px;
     margin-left: 10px;
     padding-left: 0px;
-    font-style: italic;
     font-size: 1em;
 }
 @media screen and (min-width: 480px) {
@@ -662,7 +684,6 @@ a {
     margin-right: 10px;
     margin-left: 10px;
     padding-left: 0px;
-    font-style: italic;
     color: #c77529;
 }
 @media screen and (min-width: 480px) {
@@ -688,7 +709,6 @@ a {
     margin-right: 10px;
     margin-left: 10px;
     padding-left: 0px;
-    font-style: italic;
     color: #a56799;
 }
 @media screen and (min-width: 480px) {
@@ -714,7 +734,6 @@ a {
   margin-right: 10px;
   margin-left: 10px;
   padding-left: 0px;
-  font-style: italic;
   color: #6e4ccc;
 }
 @media screen and (min-width: 480px) {
@@ -753,7 +772,11 @@ a {
   }
 }
 .LDDP_title {
-  color: #3a4fa2;
+  font-family: "Parisienne";
+  background: linear-gradient(to right, #0825db 0%, #3da1fb 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 2em;
   text-align: center;
 }
@@ -796,7 +819,6 @@ a {
   margin-right: 10px;
   margin-left: 10px;
   padding-left: 0px;
-  font-style: italic;
 }
 @media screen and (min-width: 480px) {
   .menu_LDDP ul {
@@ -833,7 +855,12 @@ a {
   }
 }
 .LPDG_title {
+  font-family: "KaushanScript";
   color: #57a746;
+  background: linear-gradient(to right, #3d923a 0%, #beff7f 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 2em;
   text-align: center;
 }
@@ -876,7 +903,6 @@ a {
   margin-right: 10px;
   margin-left: 10px;
   padding-left: 0px;
-  font-style: italic;
 }
 @media screen and (min-width: 480px) {
   .menu_LPDG ul {
