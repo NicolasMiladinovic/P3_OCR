@@ -2,32 +2,26 @@
   font-family: "Croissant One";
   src: url("../fonts/croissantone-regular.ttf");
 }
-
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Regular.ttf");
 }
-
 @font-face {
   font-family: "Devonshire";
   src: url("../fonts/Devonshire-Regular.ttf");
 }
-
 @font-face {
   font-family: "KaushanScript";
   src: url("../fonts/KaushanScript-Regular.otf");
 }
-
 @font-face {
   font-family: "Parisienne";
   src: url("../fonts/parisienne-regular.ttf");
 }
-
 @font-face {
   font-family: "tillana";
   src: url("../fonts/tillana-regular.ttf");
 }
-
 @keyframes wiggle {
   0% {
     transform: translate(2px, 0);
@@ -39,7 +33,6 @@
     transform: translate(2px, 0);
   }
 }
-
 @keyframes jumpdot {
   0% {
     transform: translateY(0.3em);
@@ -48,563 +41,594 @@
     transform: translateY(-0.3em);
   }
 }
+body {
+  margin: 0px;
+}
 
-body 
-{
-    margin: 0px;
+.page {
+  display: flex;
+  background-color: aliceblue;
 }
-.page
-{
-    display: flex;
-    background-color: aliceblue;
+
+.content {
+  background-color: white;
+  width: 100%;
 }
-.content
-{
-    background-color: white;
-    width: 100%;
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #579C87;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Roboto;
+  margin-bottom: 2rem;
+  letter-spacing: -2px;
+  /* transform: scale(1); */
 }
-header
-{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    text-align: center;
-    background-color: #579C87;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: Roboto;
-    margin-bottom: 2rem;
-    letter-spacing: -2px;
-    /* transform: scale(1); */
-}
+
 header a {
-    text-decoration: none;
-    color: #FDCB46;
-}
-.menublock {
-    display: flex;
-    flex-direction: column;
-}
-@media screen and (min-width: 768px) {
-    .menublock {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      grid-template-rows: 50% 50%;
-    }
-}
-  @media screen and (min-width: 1200px) {
-    .menublock {
-      display: grid;
-      grid-template-columns: 25% 25% 25% 25%;
-      grid-template-rows: 100%;
-    }
-}
-.menu {
-box-shadow: 0px 0px 8px 1px #a2a5a4;
-border-radius: 5px;
-width: 80%;
-height: 120vmin;
-margin-top: 2rem;
-margin-bottom: 2rem;
-margin-left: auto;
-margin-right: auto;
-text-align: center;
-}
-@media screen and (min-width: 768px) {
-    .menu {
-      height: 60vmin;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    .menu {
-      height: 55vmin;
-    }
-  }
-.LNE
-{
-    background: #FCDFDB;
-    border-radius: 5px;
-    margin: auto;
-    height: 100%;
-    align-items: center;
-}
-.LNE h3 {
-    font-family: "Devonshire";
-    font-weight: 300;
-    color: #3d1319;
-    font-size: 2em;
-}
-@media screen and (min-width : 480px) {
-    .LNE h3 {
-        font-size: 3em;
-    }
-}
-@media screen and (min-width : 768px) {
-    .LNE h3 {
-        margin-top: 1vmin;
-    }
+  text-decoration: none;
+  color: #FDCB46;
 }
 
-.LNE h2 {
-    font-family: "tillana";
-    font-weight: 300;
-    color: #3d1319;
-    font-size: 2em;
-    font-weight: bold;
+.menublock {
+  display: flex;
+  flex-direction: column;
 }
-@media screen and (min-width : 480px) {
-    .LNE h2 {
-        font-size: 3em;
-    }
-}
-.LNE img {
-    width: 20%;
-    height: auto;
-    margin-top: 25vmin;
-    max-width: 215px;
-}
-@media screen and (min-width: 480px) {
-    .LNE img {
-      width: 25%;
-      height: auto;
-    }
-}
+
 @media screen and (min-width: 768px) {
-    .LNE img {
-      margin-top: 10vmin;
-    }
+  .menublock {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
 }
 @media screen and (min-width: 1200px) {
-    .LNE img {
-      width: 15%;
-      height: auto;
-    }
+  .menublock {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+  }
+}
+.menu {
+  box-shadow: 0px 0px 8px 1px #a2a5a4;
+  border-radius: 5px;
+  width: 80%;
+  height: 120vmin;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    height: 60vmin;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu {
+    height: 55vmin;
+  }
+}
+.LNE {
+  background: #FCDFDB;
+  border-radius: 5px;
+  margin: auto;
+  height: 100%;
+  align-items: center;
+}
+
+.LNE h3 {
+  font-family: "Devonshire";
+  font-weight: 300;
+  color: #3d1319;
+  font-size: 2em;
+}
+
+@media screen and (min-width: 480px) {
+  .LNE h3 {
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LNE h3 {
+    margin-top: 1vmin;
+  }
+}
+.LNE h2 {
+  font-family: "tillana";
+  font-weight: 300;
+  color: #3d1319;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 480px) {
+  .LNE h2 {
+    font-size: 3em;
+  }
+}
+.LNE img {
+  width: 20%;
+  height: auto;
+  margin-top: 25vmin;
+  max-width: 215px;
+}
+
+@media screen and (min-width: 480px) {
+  .LNE img {
+    width: 25%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LNE img {
+    margin-top: 10vmin;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .LNE img {
+    width: 15%;
+    height: auto;
+  }
 }
 .LNE a {
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-    transform: scale(1);
-    transition: transform 300ms ease-in-out;
-    opacity: 1;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
+  opacity: 1;
 }
+
 .LNE a:hover {
   transform: scale(1.05);
   opacity: 0.8;
 }
-.LCALF
-{
-    background-color: #FFF5FE;
-    border-radius: 5px;
-    margin: auto;
-    height: 100%;
-    position: relative;
+
+.LCALF {
+  background-color: #FFF5FE;
+  border-radius: 5px;
+  margin: auto;
+  height: 100%;
+  position: relative;
 }
+
 .LCALF h3 {
-    font-family: "Croissant One", Impact;
-    margin-top: 20vmin;
-    font-size: 1.6em;
-    padding: 0vmin 3vmin 0vmin 3vmin;
-    background: linear-gradient(to right, #c77529 0%, #6e4ccc 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-family: "Croissant One", Impact;
+  margin-top: 20vmin;
+  font-size: 1.6em;
+  padding: 0vmin 3vmin 0vmin 3vmin;
+  background: linear-gradient(to right, #c77529 0%, #6e4ccc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 @media screen and (min-width: 480px) {
-    .LCALF h3 {
-      font-size: 2em;
-    }
+  .LCALF h3 {
+    font-size: 2em;
+  }
 }
 .LCALF h2 {
-    font-size: 2em;
-    font-weight: bold;
+  font-size: 2em;
+  font-weight: bold;
 }
+
 @media screen and (min-width: 480px) {
-    .LCALF h2 {
-      font-size: 2.8em;
-    }
+  .LCALF h2 {
+    font-size: 2.8em;
+  }
 }
 .LCALF_colortitlemenu {
   color: #c77412;
 }
+
 .LCALF a {
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    height: 100%;    
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: scale(1);
-    transition: transform 300ms ease-in-out;
-    opacity: 1;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
+  opacity: 1;
 }
+
 .LCALF a:hover {
   transform: scale(1.05);
   opacity: 0.8;
 }
-.LDDP
-{
-    background-color: #F9F9F9;
-    border-radius: 5px;
-    margin: auto;
-    height: 100%;
-    position: relative;
+
+.LDDP {
+  background-color: #F9F9F9;
+  border-radius: 5px;
+  margin: auto;
+  height: 100%;
+  position: relative;
 }
+
 .LDDP h3 {
-    font-family: "Parisienne";
-    margin-top: 40vmin;
-    font-size: 2em;
-    padding: 0vmin 3vmin 0vmin 3vmin;
-    background: linear-gradient(to right, #0825db 0%, #3da1fb 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
+  font-family: "Parisienne";
+  margin-top: 40vmin;
+  font-size: 2em;
+  padding: 0vmin 3vmin 0vmin 3vmin;
+  background: linear-gradient(to right, #0825db 0%, #3da1fb 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 @media screen and (min-width: 480px) {
-    .LDDP h3 {
-      font-size: 2.4em;
-    }
+  .LDDP h3 {
+    font-size: 2.4em;
+  }
 }
 @media screen and (min-width: 768px) {
-    .LDDP h3 {
-      margin-top: 20vmin;
-    }
+  .LDDP h3 {
+    margin-top: 20vmin;
+  }
 }
 .LDDP h2 {
   font-family: "tillana", cursive;
-    color: #3da1fb;
-    font-size: 2em;
-    font-weight: bold;
+  color: #3da1fb;
+  font-size: 2em;
+  font-weight: bold;
 }
+
 @media screen and (min-width: 480px) {
-    .LDDP h2 {
-        font-size: 2.8em;
-    }
+  .LDDP h2 {
+    font-size: 2.8em;
+  }
 }
 .LDDP a {
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: scale(1);
-    transition: transform 300ms ease-in-out;
-    opacity: 1;
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
+  opacity: 1;
 }
+
 .LDDP a:hover {
   transform: scale(1.05);
   opacity: 0.8;
 }
-.LPDG
-{
-    background-color: #FDFFFD;
-    border-radius: 5px;
-    margin: auto;
-    height: 100%;
-    position: relative;
+
+.LPDG {
+  background-color: #FDFFFD;
+  border-radius: 5px;
+  margin: auto;
+  height: 100%;
+  position: relative;
 }
+
 .LPDG h3 {
-    background: linear-gradient(to right, #3d923a 0%, #beff7f 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "KaushanScript";
-    margin-top: 40vmin;
-    font-size: 2em;
-    padding: 0vmin 3vmin 0vmin 3vmin;
+  background: linear-gradient(to right, #3d923a 0%, #beff7f 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "KaushanScript";
+  margin-top: 40vmin;
+  font-size: 2em;
+  padding: 0vmin 3vmin 0vmin 3vmin;
 }
+
 @media screen and (min-width: 480px) {
-    .LPDG h3 {
-        font-size: 2.4em;
-    }
+  .LPDG h3 {
+    font-size: 2.4em;
+  }
 }
 @media screen and (min-width: 768px) {
-    .LPDG h3 {
-        margin-top: 20vmin;
-    }
+  .LPDG h3 {
+    margin-top: 20vmin;
+  }
 }
 .LPDG h2 {
-    font-size: 2em;
-    font-family: "tillana";
-    background: linear-gradient(to right, #3d923a 0%, #beff7f 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 2em;
+  font-family: "tillana";
+  background: linear-gradient(to right, #3d923a 0%, #beff7f 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 @media screen and (min-width: 480px) {
-    .LPDG h2 {
-        font-size: 2.8em;
-    }
+  .LPDG h2 {
+    font-size: 2.8em;
+  }
 }
 .LPDG a {
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: scale(1);
-    transition: transform 300ms ease-in-out;
-    opacity: 1;
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
+  opacity: 1;
 }
+
 .LPDG a:hover {
   transform: scale(1.05);
   opacity: 0.8;
 }
-.prochainement
-{
-    background-color: #579C87;
-    color: #fdcb46ff;
-    font-family: roboto;
-    border-radius: 5px;
-    width: 60%;
-    height: 2.5em;
-    margin: 0vmin auto 15vmin auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1em;
+
+.prochainement {
+  background-color: #579C87;
+  color: #fdcb46ff;
+  font-family: roboto;
+  border-radius: 5px;
+  width: 60%;
+  height: 2.5em;
+  margin: 0vmin auto 15vmin auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
 }
+
 @media screen and (min-width: 768px) {
-    .prochainement {
-      width: 50%;
-      height: 2.8em;
-      font-size: 1.5em;
-      margin: 0vmin auto 10vmin auto;
-    }
+  .prochainement {
+    width: 50%;
+    height: 2.8em;
+    font-size: 1.5em;
+    margin: 0vmin auto 10vmin auto;
+  }
 }
-  @media screen and (min-width: 1200px) {
-    .prochainement {
-      width: 30%;
-      height: 2.4em;
-      margin: 10vmin auto 0vmin auto;
-    }
+@media screen and (min-width: 1200px) {
+  .prochainement {
+    width: 30%;
+    height: 2.4em;
+    margin: 10vmin auto 0vmin auto;
+  }
 }
-footer
-{
-    font-family: "Roboto";
-    background-color: #579C87;
-    display: flex;
-    color: #fdcb46ff;
-    font-family: Roboto;
-    font-size: 1em;
-    align-items: center;
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    justify-content: space-between;
-    height: 12vmin;
-    margin-top: 2vmin;
+footer {
+  font-family: "Roboto";
+  background-color: #579C87;
+  display: flex;
+  color: #fdcb46ff;
+  font-family: Roboto;
+  font-size: 1em;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  justify-content: space-between;
+  height: 12vmin;
+  margin-top: 2vmin;
 }
+
 @media screen and (min-width: 480px) {
-    footer {
-      height: 8vmin;
-      font-size: 1.2em;
-    }
+  footer {
+    height: 8vmin;
+    font-size: 1.2em;
+  }
 }
 @media screen and (min-width: 768px) {
-    footer {
-      font-size: 1.5em;
-    }
+  footer {
+    font-size: 1.5em;
+  }
 }
-  @media screen and (min-width: 1200px) {
-    footer {
-      height: 6vmin;
-      font-size: 1.5em;
-    }
+@media screen and (min-width: 1200px) {
+  footer {
+    height: 6vmin;
+    font-size: 1.5em;
+  }
 }
 footer a:hover {
   animation: wiggle 75ms infinite;
   animation-timing-function: linear;
 }
+
 .foot_text {
-    padding: 0vmin 3vmin 0vmin 3vmin;
+  padding: 0vmin 3vmin 0vmin 3vmin;
 }
+
 a {
   text-decoration: none;
   color: #fdcb46ff;
+}
 
-}
 .lien_restaurant {
-    display: block;
-    text-align: center;
-    font-family: roboto;
-    font-size: 1em;
-    color: #414141;
+  display: block;
+  text-align: center;
+  font-family: roboto;
+  font-size: 1em;
+  color: #414141;
 }
+
 @media screen and (min-width: 480px) {
-    .lien_restaurant {
-      font-size: 1.2em;
-    }
+  .lien_restaurant {
+    font-size: 1.2em;
+  }
 }
 @media screen and (min-width: 768px) {
-    .lien_restaurant {
-      font-size: 1.4em;
-    }
+  .lien_restaurant {
+    font-size: 1.4em;
+  }
 }
 .menu_LNE {
-    font-family: "tillana", cursive;
-    box-shadow: 0px 0px 8px 1px #a2a5a4;
-    border-radius: 5px;
-    width: 80%;
-    padding: 1em 0em 1em 0em;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    margin-left: auto;
-    margin-right: auto;
-    color: #3d1319;
-    background: #f8e5e1;
+  font-family: "tillana", cursive;
+  box-shadow: 0px 0px 8px 1px #a2a5a4;
+  border-radius: 5px;
+  width: 80%;
+  padding: 1em 0em 1em 0em;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: #3d1319;
+  background: #f8e5e1;
 }
+
 @media screen and (min-width: 1200px) {
-    .menu_LNE {
-      width: 70%;
-    }
+  .menu_LNE {
+    width: 70%;
+  }
 }
 .LNE_title {
-    font-size: 2.5em;
-    font-weight: 300;
-    text-align: center;
+  font-size: 2.5em;
+  font-weight: 300;
+  text-align: center;
 }
+
 @media screen and (min-width: 480px) {
-    .LNE_title {
-      font-size: 3.5em;
-    }
+  .LNE_title {
+    font-size: 3.5em;
+  }
 }
 @media screen and (min-width: 768px) {
-    .LNE_title {
-      font-size: 3.8em;
-    }
+  .LNE_title {
+    font-size: 3.8em;
+  }
 }
 @media screen and (min-width: 1200px) {
-    .LNE_title {
-      font-size: 4.5em;
-    }
+  .LNE_title {
+    font-size: 4.5em;
+  }
 }
 .LNE_undertitle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2em;
 }
+
 .LNE_undertitle img {
-    width: 25%;
+  width: 25%;
 }
+
 .note_imgtop {
-    width: 15%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3vmin;
+  width: 15%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vmin;
 }
+
 .LNE_bottom {
-    margin-top: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    font-weight: 300;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: 300;
 }
+
 @media screen and (min-width: 768px) {
-    .LNE_bottom {
-      font-size: 2.2em;
-    }
-    .LNE_bottom img {
-      width: 1.2em;
-      height: auto;
-    }
+  .LNE_bottom {
+    font-size: 2.2em;
+  }
+
+  .LNE_bottom img {
+    width: 1.2em;
+    height: auto;
+  }
 }
 .menu_LNE ul {
-    list-style: none;
-    text-align: center;
-    margin-right: 10px;
-    margin-left: 10px;
-    padding-left: 0px;
-    font-size: 1em;
+  list-style: none;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-left: 0px;
+  font-size: 1em;
 }
+
 @media screen and (min-width: 480px) {
-    .menu_LNE ul {
-      font-size: 1.2em;
-    }
+  .menu_LNE ul {
+    font-size: 1.2em;
+  }
 }
 @media screen and (min-width: 768px) {
-    .menu_LNE ul {
-      font-size: 1.3em;
-    }
+  .menu_LNE ul {
+    font-size: 1.3em;
+  }
 }
 @media screen and (min-width: 1200px) {
-    .menu_LNE ul {
-      display: flex;
-      flex-wrap: wrap;
-    }
+  .menu_LNE ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (min-width: 1200px) {
-    .plat {
-      display: inline-block;
-      width: 93%;
-      text-align: left;
-      padding: 0.3em 0em 0.3em 0em;
-    }
+  .plat {
+    display: inline-block;
+    width: 93%;
+    text-align: left;
+    padding: 0.3em 0em 0.3em 0em;
+  }
 }
 .price {
-    font-size: 1em;
-    font-weight: bold;
-    font-style: normal;
-    margin-top: 0.2em;
-    margin-bottom: 0.5em;
-}
-@media screen and (min-width: 1200px) {
-    .price {
-      display: inline-block;
-      margin: 0;
-      text-align: right;
-      width: 7%;
-      padding: 0.3em 0em 0.3em 0em;
-    }
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
 }
 
-.menu_LCALF {
-    box-shadow: 0px 0px 8px 1px #a2a5a4;
-    border-radius: 5px;
-    width: 80%;
-    padding: 1em 0em 1em 0em;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    margin-left: auto;
-    margin-right: auto;
-    background: #fff5fe;
-}
 @media screen and (min-width: 1200px) {
-    .menu_LCALF {
-      width: 70%;
-    }
+  .price {
+    display: inline-block;
+    margin: 0;
+    text-align: right;
+    width: 7%;
+    padding: 0.3em 0em 0.3em 0em;
+  }
+}
+.menu_LCALF {
+  box-shadow: 0px 0px 8px 1px #a2a5a4;
+  border-radius: 5px;
+  width: 80%;
+  padding: 1em 0em 1em 0em;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff5fe;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu_LCALF {
+    width: 70%;
+  }
 }
 .menu_LCALF h3 {
-    font-size: 1.2em;
-    padding: 0vmin 3vmin 0vmin 3vmin;
-}
-@media screen and (min-width: 480px) {
-    .menu_LCALF h3 {
-      font-size: 2em;
-    }
+  font-size: 1.2em;
+  padding: 0vmin 3vmin 0vmin 3vmin;
 }
 
-.menu_LCALF h2 {
-    color: #c77529;
-    font-size: 2em;
-    font-weight: bold;
-}
 @media screen and (min-width: 480px) {
-    .menu_LCALF h2 {
-      font-size: 2.8em;
-    }
+  .menu_LCALF h3 {
+    font-size: 2em;
+  }
+}
+.menu_LCALF h2 {
+  color: #c77529;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 480px) {
+  .menu_LCALF h2 {
+    font-size: 2.8em;
+  }
 }
 .LCALF_title {
   font-family: "Croissant One", impact;
@@ -615,6 +639,7 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 @media screen and (min-width: 480px) {
   .LCALF_title {
     font-size: 2em;
@@ -631,61 +656,66 @@ a {
   }
 }
 .menu_LCALF img {
-    width: 25%;
+  width: 25%;
 }
+
 .LCALF_undertitlestart {
-    color: #c77529;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    font-size: 1em;
-    margin-right: 0.5em;
-    margin-left: 0.5em;
+  color: #c77529;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 1em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
+
 @media screen and (min-width: 768px) {
-    .LCALF_undertitlestart img {
-      width: 30%;
-    }
+  .LCALF_undertitlestart img {
+    width: 30%;
+  }
 }
 .LCALF_undertitlemain {
-    color: #a56799;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    font-size: 1em;
-    margin-right: 0.5em;
-    margin-left: 0.5em;
+  color: #a56799;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 1em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
+
 @media screen and (min-width: 768px) {
-    .LCALF_undertitlemain img {
-      width: 30%;
-    }
+  .LCALF_undertitlemain img {
+    width: 30%;
+  }
 }
 .LCALF_undertitledessert {
-    color: #6e4ccc;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    font-size: 1em;
-    margin-right: 0.5em;
-    margin-left: 0.5em;
+  color: #6e4ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 1em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
+
 @media screen and (min-width: 768px) {
-    .LCALF_undertitledessert img {
-      width: 30%;
-    }
+  .LCALF_undertitledessert img {
+    width: 30%;
+  }
 }
 .LCALF_starter {
-    list-style: none;
-    text-align: center;
-    margin-right: 10px;
-    margin-left: 10px;
-    padding-left: 0px;
-    color: #c77529;
+  list-style: none;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-left: 0px;
+  color: #c77529;
 }
+
 @media screen and (min-width: 480px) {
   .LCALF_starter {
     font-size: 1.2em;
@@ -704,29 +734,30 @@ a {
   }
 }
 .LCALF_maincourse {
-    list-style: none;
-    text-align: center;
-    margin-right: 10px;
-    margin-left: 10px;
-    padding-left: 0px;
-    color: #a56799;
+  list-style: none;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-left: 0px;
+  color: #a56799;
 }
+
 @media screen and (min-width: 480px) {
-    .LCALF_maincourse {
-      font-size: 1.2em;
-    }
+  .LCALF_maincourse {
+    font-size: 1.2em;
+  }
 }
 @media screen and (min-width: 768px) {
-    .LCALF_maincourse {
-      font-size: 1.3em;
-    }
+  .LCALF_maincourse {
+    font-size: 1.3em;
+  }
 }
 @media screen and (min-width: 1200px) {
-    .LCALF_maincourse {
-      font-size: 1.5em;
-      display: flex;
-      flex-wrap: wrap;
-    }
+  .LCALF_maincourse {
+    font-size: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .LCALF_dessert {
   list-style: none;
@@ -736,6 +767,7 @@ a {
   padding-left: 0px;
   color: #6e4ccc;
 }
+
 @media screen and (min-width: 480px) {
   .LCALF_dessert {
     font-size: 1.2em;
@@ -766,6 +798,7 @@ a {
   font-family: tillana, cursive;
   font-size: 1em;
 }
+
 @media screen and (min-width: 1200px) {
   .menu_LDDP {
     width: 70%;
@@ -780,6 +813,7 @@ a {
   font-size: 2em;
   text-align: center;
 }
+
 @media screen and (min-width: 480px) {
   .LDDP_title {
     font-size: 2.5em;
@@ -805,6 +839,7 @@ a {
   margin-right: 0.5em;
   margin-left: 0.5em;
 }
+
 @media screen and (min-width: 768px) {
   .LDDP_undertitle img {
     width: 30%;
@@ -813,6 +848,7 @@ a {
 .menu_LDDP img {
   width: 25%;
 }
+
 .menu_LDDP ul {
   list-style: none;
   text-align: center;
@@ -820,6 +856,7 @@ a {
   margin-left: 10px;
   padding-left: 0px;
 }
+
 @media screen and (min-width: 480px) {
   .menu_LDDP ul {
     font-size: 1.2em;
@@ -849,6 +886,7 @@ a {
   font-family: tillana, cursive;
   font-size: 1em;
 }
+
 @media screen and (min-width: 1200px) {
   .menu_LPDG {
     width: 70%;
@@ -864,6 +902,7 @@ a {
   font-size: 2em;
   text-align: center;
 }
+
 @media screen and (min-width: 480px) {
   .LPDG_title {
     font-size: 2.5em;
@@ -889,9 +928,11 @@ a {
   margin-right: 0.5em;
   margin-left: 0.5em;
 }
+
 .LPDG_undertitle img {
   width: 25%;
 }
+
 @media screen and (min-width: 768px) {
   .LPDG_undertitle img {
     width: 30%;
@@ -904,6 +945,7 @@ a {
   margin-left: 10px;
   padding-left: 0px;
 }
+
 @media screen and (min-width: 480px) {
   .menu_LPDG ul {
     font-size: 1.2em;
@@ -920,13 +962,40 @@ a {
     flex-wrap: wrap;
   }
 }
+.LCALF_underlinestart {
+  background: linear-gradient(to top, #c77529 5%, transparent 5.01%) no-repeat left bottom/0 100%;
+  transition: background-size 1000ms;
+}
 
 .LCALF_underlinestart:hover {
   background-size: 100% 100%;
 }
-.LCALF_underlinestart {
-  background: linear-gradient(to top, #c77529 5%, transparent 5.01%) no-repeat left bottom/0 100%;
+
+.LCALF_underlinemain {
+  background: linear-gradient(to top, #a56799 5%, transparent 5.01%) no-repeat left bottom/0 100%;
   transition: background-size 1000ms;
+}
+
+.LCALF_underlinemain:hover {
+  background-size: 100% 100%;
+}
+
+.LCALF_underlinedessert {
+  background: linear-gradient(to top, #6e4ccc 5%, transparent 5.01%) no-repeat left bottom/0 100%;
+  transition: background-size 1000ms;
+}
+
+.LCALF_underlinedessert:hover {
+  background-size: 100% 100%;
+}
+
+.LNE_underline {
+  background: linear-gradient(to top, #000 5%, transparent 5.01%) no-repeat left bottom/0 100%;
+  transition: background-size 1000ms;
+}
+
+.LNE_underline:hover {
+  background-size: 100% 100%;
 }
 
 .prochainement_dot {
@@ -939,9 +1008,13 @@ a {
   animation-direction: alternate;
   transition-timing-function: ease-in-out;
 }
+
 .prochainement_dot2 {
   animation-delay: 300ms;
 }
+
 .prochainement_dot3 {
   animation-delay: 600ms;
 }
+
+/*# sourceMappingURL=style.css.map */
