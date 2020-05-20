@@ -63,7 +63,7 @@ header {
   background-color: #579C87;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: Roboto;
+  font-family: Roboto, "Times New Roman";
   margin-bottom: 2rem;
   letter-spacing: -2px;
   /* transform: scale(1); */
@@ -71,7 +71,7 @@ header {
 
 header a {
   text-decoration: none;
-  color: #FDCB46;
+  color: #fdcb46ff;
 }
 
 .menublock {
@@ -141,7 +141,7 @@ header a {
   }
 }
 .LNE h2 {
-  font-family: "tillana";
+  font-family: "tillana", cursive;
   font-weight: 300;
   color: #3d1319;
   font-size: 2em;
@@ -338,7 +338,7 @@ header a {
 }
 .LPDG h2 {
   font-size: 2em;
-  font-family: "tillana";
+  font-family: "tillana", cursive;
   background: linear-gradient(to right, #3d923a 0%, #beff7f 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -371,7 +371,7 @@ header a {
 .prochainement {
   background-color: #579C87;
   color: #fdcb46ff;
-  font-family: roboto;
+  font-family: Roboto, "Times New Roman";
   border-radius: 5px;
   width: 60%;
   height: 2.5em;
@@ -398,11 +398,10 @@ header a {
   }
 }
 footer {
-  font-family: "Roboto";
   background-color: #579C87;
   display: flex;
   color: #fdcb46ff;
-  font-family: Roboto;
+  font-family: Roboto, "Times New Roman";
   font-size: 1em;
   align-items: center;
   position: sticky;
@@ -447,7 +446,7 @@ a {
 .lien_restaurant {
   display: block;
   text-align: center;
-  font-family: roboto;
+  font-family: Roboto, "Times New Roman";
   font-size: 1em;
   color: #414141;
 }
@@ -795,7 +794,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   background: #edefef;
-  font-family: tillana, cursive;
+  font-family: "tillana", cursive;
   font-size: 1em;
 }
 
@@ -830,7 +829,7 @@ a {
   }
 }
 .LDDP_undertitle {
-  font-family: tillana, cursive;
+  font-family: "tillana", cursive;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -883,7 +882,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   background: #fdfffd;
-  font-family: tillana, cursive;
+  font-family: "tillana", cursive;
   font-size: 1em;
 }
 
@@ -923,7 +922,7 @@ a {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  font-family: tillana, cursive;
+  font-family: "tillana", cursive;
   font-size: 1em;
   margin-right: 0.5em;
   margin-left: 0.5em;

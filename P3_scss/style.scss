@@ -1,4 +1,8 @@
+$font-stack1 : Roboto, 'Times New Roman'; 
+$font-stack2: "tillana", cursive;
 $color-white: white;
+$color-green : #579C87;
+$color-ohmyfood: #fdcb46ff;
 
 @font-face {
     font-family: "Croissant One";
@@ -71,17 +75,18 @@ $color-white: white;
       justify-content: center;
       align-items: center; 
       text-align: center;
-      background-color: #579C87;
+      background-color: $color-green;
       padding-top: 10px;
       padding-bottom: 10px;
-      font-family: Roboto;
+      font-family: $font-stack1;
       margin-bottom: 2rem;
       letter-spacing: -2px;
       /* transform: scale(1); */
   }
   header a {
       text-decoration: none;
-      color: #FDCB46;
+      color: $color-ohmyfood;
+      ;
   }
   .menublock {
       display: flex;
@@ -148,7 +153,7 @@ $color-white: white;
   }
   
   .LNE h2 {
-      font-family: "tillana";
+      font-family: $font-stack2;
       font-weight: 300;
       color: #3d1319;
       font-size: 2em;
@@ -276,7 +281,7 @@ $color-white: white;
       }
   }
   .LDDP h2 {
-    font-family: "tillana", cursive;
+    font-family: $font-stack2;
       color: #3da1fb;
       font-size: 2em;
       font-weight: bold;
@@ -332,7 +337,7 @@ $color-white: white;
   }
   .LPDG h2 {
       font-size: 2em;
-      font-family: "tillana";
+      font-family: $font-stack2;
       background: linear-gradient(to right, #3d923a 0%, #beff7f 100%);
       background-clip: text;
       -webkit-background-clip: text;
@@ -361,9 +366,9 @@ $color-white: white;
   }
   .prochainement
   {
-      background-color: #579C87;
-      color: #fdcb46ff;
-      font-family: roboto;
+      background-color: $color-green;
+      color: $color-ohmyfood;
+      font-family: $font-stack1;
       border-radius: 5px;
       width: 60%;
       height: 2.5em;
@@ -390,11 +395,10 @@ $color-white: white;
   }
   footer
   {
-      font-family: "Roboto";
-      background-color: #579C87;
+      background-color: $color-green;
       display: flex;
-      color: #fdcb46ff;
-      font-family: Roboto;
+      color: $color-ohmyfood;
+      font-family: $font-stack1;
       font-size: 1em;
       align-items: center;
       position: sticky;
@@ -430,13 +434,13 @@ $color-white: white;
   }
   a {
     text-decoration: none;
-    color: #fdcb46ff;
+    color: $color-ohmyfood;
   
   }
   .lien_restaurant {
       display: block;
       text-align: center;
-      font-family: roboto;
+      font-family: $font-stack1;
       font-size: 1em;
       color: #414141;
   }
@@ -451,7 +455,7 @@ $color-white: white;
       }
   }
   .menu_LNE {
-      font-family: "tillana", cursive;
+      font-family: $font-stack2;
       box-shadow: 0px 0px 8px 1px #a2a5a4;
       border-radius: 5px;
       width: 80%;
@@ -765,7 +769,7 @@ $color-white: white;
     margin-left: auto;
     margin-right: auto;
     background: #edefef;
-    font-family: tillana, cursive;
+    font-family: $font-stack2;
     font-size: 1em;
   }
   @media screen and (min-width: 1200px) {
@@ -798,7 +802,7 @@ $color-white: white;
     }
   }
   .LDDP_undertitle {
-    font-family: tillana, cursive;
+    font-family: $font-stack2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -848,7 +852,7 @@ $color-white: white;
     margin-left: auto;
     margin-right: auto;
     background: #fdfffd;
-    font-family: tillana, cursive;
+    font-family: $font-stack2;
     font-size: 1em;
   }
   @media screen and (min-width: 1200px) {
@@ -886,7 +890,7 @@ $color-white: white;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    font-family: tillana, cursive;
+    font-family: $font-stack2;
     font-size: 1em;
     margin-right: 0.5em;
     margin-left: 0.5em;
