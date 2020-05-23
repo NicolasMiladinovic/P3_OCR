@@ -214,6 +214,9 @@ $color-ohmyfood: #fdcb46ff;
       font-size: 1.6em;
       padding: 0vmin 3vmin 0vmin 3vmin;
       background: linear-gradient(to right, #c77529 0%, #6e4ccc 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
   }
   @media screen and (min-width: 480px) {
       .LCALF h3 {
@@ -262,6 +265,9 @@ $color-ohmyfood: #fdcb46ff;
       font-size: 2em;
       padding: 0vmin 3vmin 0vmin 3vmin;
       background: linear-gradient(to right, #0825db 0%, #3da1fb 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
   }
   @media screen and (min-width: 480px) {
       .LDDP h3 {
@@ -310,6 +316,9 @@ $color-ohmyfood: #fdcb46ff;
   }
   .LPDG h3 {
       background: linear-gradient(to right, #3d923a 0%, #beff7f 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       font-family: "KaushanScript";
       margin-top: 40vmin;
       font-size: 2em;
@@ -329,6 +338,9 @@ $color-ohmyfood: #fdcb46ff;
       font-size: 2em;
       font-family: $font-stack2;
       background: linear-gradient(to right, #3d923a 0%, #beff7f 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
   }
   @media screen and (min-width: 480px) {
       .LPDG h2 {
@@ -604,6 +616,9 @@ $color-ohmyfood: #fdcb46ff;
     font-size: 1.6em;
     text-align: center;
     background: linear-gradient(to right, #e38913 0%, #8f5bfe 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   @media screen and (min-width: 480px) {
     .LCALF_title {
@@ -764,6 +779,9 @@ $color-ohmyfood: #fdcb46ff;
   .LDDP_title {
     font-family: "Parisienne";
     background: linear-gradient(to right, #0825db 0%, #3da1fb 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 2em;
     text-align: center;
   }
@@ -845,6 +863,9 @@ $color-ohmyfood: #fdcb46ff;
     font-family: "KaushanScript";
     color: #57a746;
     background: linear-gradient(to right, #3d923a 0%, #beff7f 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 2em;
     text-align: center;
   }
